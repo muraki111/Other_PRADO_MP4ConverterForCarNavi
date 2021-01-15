@@ -1,0 +1,1 @@
+ffmpeg -dual_mono_mode main -y -i inputfile.mp4 -threads 1 -c:v mpeg4 -aspect 16:9 -r 30 -s 720x480 -b:v 2500k -maxrate 2500k -bufsize 256k -strict experimental -c:a aac -ac 2 -ar 48000 -b:a 256k output.mp4
